@@ -2,7 +2,8 @@
 The FileContentTree project migrated into Spring Boot
 
 Use the included File_Tree_Input.txt for testing purposes.
-Refer the TreeCollections project in my repo for what the project does.
+
+Contains one POST api which takes a test file as input and sorts the names by designation in descending order of reporting.
 
 
 ### The aim of this project is to override the Comparator method in treecollections.Tree Object, so that the objects inserted into the treecollections.Tree can be sorted in a User defined order.
