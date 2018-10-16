@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -38,7 +37,7 @@ public class FileContentTreeServiceImpl implements FileContentTreeService {
     private Map<String, String> readDataFromFile(File file) throws FileNotFoundException {
         String line;
         try {
-            FileReader filereader = new FileReader((File)file);
+            FileReader filereader = new FileReader(file);
             BufferedReader buffer = new BufferedReader(filereader);
             while ((line = buffer.readLine()) != null) {
                 String[] split = line.split(",");
